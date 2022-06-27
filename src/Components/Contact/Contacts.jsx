@@ -1,8 +1,8 @@
 import React from 'react'
-import "./contacts.scss"
+import './contacts.scss'
 export default function Contacts() {
   return (
-    <div className = "contacts">
+    <div className = 'contacts'>
         
     </div>
   )
