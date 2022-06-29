@@ -2,19 +2,20 @@
     height: 100vh;
     .sections{
         width: 100%;
-        height: calc(100vh - 59px);
+        height: calc(100vh - 80px);
         background-color: lightsalmon;
         position: relative;
-        top: 60px;
+        top: 80px;
         scroll-snap-type: y mandatory;
         scrollbar-width: none;
+        scroll-behavior: smooth;
         overflow: scroll;
         &::-webkit-scrollbar{
             display: none;
         }
         > *{
             width: 100vw;
-            height: calc(100vh - 59px);
+            height: calc(100vh - 80px);
             scroll-snap-align: start;
         }
     }
