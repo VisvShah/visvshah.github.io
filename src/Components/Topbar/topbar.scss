@@ -2,7 +2,7 @@
 .topbar{
     width: 100%;
     height: 80px;
-    background-color: white;
+    background-color: $secondColor;
     color: $mainColor;
     position: fixed;
     top: 0;
@@ -32,8 +32,23 @@
             }
         }
         .rightSide{
-
+            .menu{
+                width: 30px;
+                height: 22px;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                span{
+                    width: 100%;
+                    height: 4px;
+                    margin-top: 5px;
+                    background-color: $mainColor;
+                }
+            }
         }
     }
-   
+    &.active{
+        background-color: $mainColor;
+        color: $secondColor;
+    }
 }
