@@ -1,7 +1,7 @@
 import React from 'react'
 import './topbar.scss'
-import gitLogo from '../../assets/githubLogo.png'
-import linkedinLogo from '../../assets/linkedinLogo.png'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 export default function TopBar({isMenuOpened, setMenuOpened}) {
   return (
     <div className = {'topbar ' + (isMenuOpened && 'active')}>
@@ -9,11 +9,11 @@ export default function TopBar({isMenuOpened, setMenuOpened}) {
             <div className="leftSide">
                 <a href = '#about' className = 'logo'>visvshah.com</a>
                 <div className="link1">
-                    <a href = 'https://github.com/VisvShah' target='_blank' rel="noreferrer noopener"> <img src = {gitLogo} alt = 'Github Logo' className = 'gitLogo'></img></a>
+                    <a href = 'https://github.com/VisvShah' target='_blank' rel="noreferrer noopener"> <GitHubIcon className='gitLogo'/></a>
                     <p className = 'linkName'>Github</p>
                 </div>   
                 <div className="link2">
-                    <a href = 'https://www.linkedin.com/in/visvshah/' target='_blank' rel="noreferrer noopener"> <img src = {linkedinLogo} alt = 'Linkedin Logo' className = 'linkedinLogo'></img></a>
+                    <a href = 'https://www.linkedin.com/in/visvshah/' target='_blank' rel="noreferrer noopener"> <LinkedInIcon className = 'linkedinLogo'/></a>
                     <p className = 'linkName'>Linkedin</p>
                 </div>
             </div>
