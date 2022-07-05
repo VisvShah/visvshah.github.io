@@ -1,6 +1,6 @@
 @import "../../global.scss";
 .about{
-    background-color: #0C0032;
+    background-color: #272727;
     display: flex;
     .left{
         flex: 0.5;
@@ -14,21 +14,30 @@
             height: calc(100vh - 180px);
             width: calc(100vh - 180px);
             overflow: hidden;
-            background-color: $secondColor;
+            background-color: $orange;
             border-radius: 50%;
             display: flex;
             align-items: center;
             float: left;
+            transition: all 1s ease;
+            
             .imageOfMe{
                 margin: auto;
                 margin-bottom: -10px;
                 height: 100%;
             }
+            &:hover{
+                width: 100%;
+                height: 100%;
+                margin:0;
+                border-radius: 0%;
+            }
         }
+        
     }
     .right{
         flex: 0.5;
-        color: $secondColor;
+        color: $mainColor;
         overflow: hidden;
         .wrapper{
             width: 80%;
@@ -41,20 +50,28 @@
             h2{
                 font-size: 40px;
                 margin-bottom: 10px;
+                color: $gray;
             }
             h1{
                 font-size: 65px;
                 font-weight: 700;
                 margin-bottom: 15px;
+                color: $orange;
+                cursor: pointer;
             }
             p{
                 font-size: 25px;
                 margin-bottom: 35px;
+                color: $gray;
             }
             h3{
                 font-size: 30px;
                 margin-bottom: 15px;
                 list-style: decimal;
+                color: $gray;
+            }
+            ul{
+                color: $orange;
             }
         }
     }

@@ -2,8 +2,8 @@
 .menu{
     width: 250px;
     height: 100vh;
-    background-color: $mainColor;
-    color: $secondColor;
+    background-color: $secondColor2;
+    color: $mainColor;
     font-size: 40px;
     position: fixed;
     top: 0;
@@ -24,7 +24,7 @@
             margin-bottom: 40px;
             a{
                 font-size: 40px;
-                color:$secondColor;
+                color:$mainColor;
                 text-decoration: none;
                 
             }
