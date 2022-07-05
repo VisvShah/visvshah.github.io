@@ -2,7 +2,8 @@ import React, {useState}from 'react';
 import './projects.scss';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
-import LinkIcon from '@mui/icons-material/Link';
+import PreviewIcon from '@mui/icons-material/Preview';
+import GitHubIcon from '@mui/icons-material/GitHub';
 export default function Projects() {
     const [currentProject, changeProject] = useState(0)
     const moveLeft = ()=>{
@@ -25,38 +26,32 @@ export default function Projects() {
     const projectData = [
         {
             id: "0",
-            title: "Dragon Dragon Dash - A Mobile Game",
+            title: "Dragon Dragon Dash",
             link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
-            videoLink: "https://youtu.be/Kq7K9lWkZtI",
+            videoLink: "https://www.youtube.com/embed/Kq7K9lWkZtI",
+            gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
             skills: "Swift, Spritekit",
             date: "April 2022 - May 2022",
-            desc: "This is a game I developed to achive my goal of publishing an app on the app store. This casual mobile game includes: a variety of levels with altering difficulty, 7 different enemy types, 4 impactful upgrade systems, 4 unique power-ups, and fun controls. This was a fun project to make and it is made up of over 1500 lines of code. I completed it with image and audio assetts and it is now as functional as any other popular game on the app store.",
+            desc: "An original game idea I developed and published on the app store. Dragon Dragon Dash is a fun, infinite runner with varying difficulty, impactful upgrades, distinct powerups, and smooth gameplay.",
         },
         
         {
             id: "1",
-            title: "This Personal Portfolio",
+            title: "Personal Portfolio",
             link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
             videoLink: "https://youtu.be/Kq7K9lWkZtI",
-            skills: "JavaScript, React.js",
+            gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
+            skills: "React.js",
             date: "June 2022",
             desc: "This personal portfolio furthered my expereince with several asppects of React.js.",
         },
         {
             id: "2",
-            title: "RankR - A Full Stack Social Media Site",
+            title: "RankR",
             link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
             videoLink: "https://youtu.be/Kq7K9lWkZtI",
-            skills: "JavaScript, React.js, Node.js, Express.js, MongoDB.js",
-            date: "July 2022 - August 2022",
-            desc: "in construction...",
-        },
-        {
-            id: "3",
-            title: "RankR - A Full Stack Social Media Site",
-            link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
-            videoLink: "https://youtu.be/Kq7K9lWkZtI",
-            skills: "JavaScript, React.js, Node.js, Express.js, MongoDB.js",
+            gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
+            skills: "MERN.js stack",
             date: "July 2022 - August 2022",
             desc: "in construction...",
         },
@@ -70,16 +65,27 @@ export default function Projects() {
                     <div className="project">
                         <div className="top">
                             <h1>{pD.title}</h1>
+                            <h2>{pD.date}</h2>
                         </div>
-                        <div className="bottom">
+                        <div className="middle">
                             <div className="left">
-                            <a href = {pD.link} target='_blank' rel="noreferrer noopener"><LinkIcon className= "websiteLink"/></a>
-                                <h2>{pD.date}</h2>
-                                <h2>Skills: {pD.skills}</h2>
-                                <p>{pD.desc}</p>
-                                
+                                <div className="textHolder">
+                                    <h2>Used: {pD.skills}</h2>
+                                    <p>{pD.desc}</p>
+                                </div>
                             </div>
                             <div className="right">
+                                <iframe width="350" height="200" src={pD.videoLink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div className="bottom">
+                            <div className="link1">
+                                <a href = {pD.link} target='_blank' rel="noreferrer noopener"><PreviewIcon className= "websiteLink"/></a>
+                                <p className = 'linkName'>View</p>
+                            </div>   
+                            <div className="link2">
+                                <a href = {pD.gitLink} target='_blank' rel="noreferrer noopener"><GitHubIcon className= "websiteLink"/></a>
+                                <p className = 'linkName'>Github</p>
                             </div>
                         </div>
                     </div>
