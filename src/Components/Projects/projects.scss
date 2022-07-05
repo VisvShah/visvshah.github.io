@@ -1,30 +1,37 @@
 @import "../../global.scss";
 .projects{
-    background-color: #FF652F;
+    background-color: $secondColor2;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3;
     position: relative;
+    .projectHeader{
+        color: $mainColor;
+        font-size: 50px;
+        position: absolute;
+        top: 10px;
+    }
     .leftArrow{
         font-size: 100px;
-        color: $mainColor;
+        color: $gray;
         position: absolute;
-        left: 50px;
+        left: 30px;
         cursor: pointer;
     }
     .rightArrow{
         font-size: 100px;
-        color: $mainColor;
+        color: $gray;
         position: absolute;
-        right: 50px;
+        right: 30px;
         cursor: pointer;
     }
     .projectSlider{
-        height: 400px;
+        height: 600px;
         display: flex;
         position: absolute;
-        left: -300vw;
+        left: 0vw;
+        transition: all 1s ease;
+        top: 70px;
         .projectHolder{
             width:100vw;
             height: 100%;
@@ -32,13 +39,13 @@
             align-items: center;
             justify-content: center;
             .project{
-                width: 800px;
+                width: 1200px;
                 height: 100%;
                 overflow: hidden;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border-radius: 30px;
+                border-radius: 60px;
                 flex-direction: column;
                 
                 .top{
@@ -49,7 +56,9 @@
                     background-color: $mainColor;
                     justify-content: center;
                     align-items: center;
-                    color: $gray;
+                    color: $green;
+                    font-size: 20px;
+                    font-weight: 700;
                 }
                 .bottom{
                     flex:4;
@@ -59,20 +68,37 @@
                     flex-direction:row;
                     
                     .left{
+                        color: $green;
                         flex:2;
                         display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        
+                        flex-direction: column;
                         height:100%;
                         width: 40%;
-                        background-color: $gray;
+                        background-color: $mainColor;
+                        h2{
+                            margin-top: 10px;
+                            margin-bottom: 7px;
+                            margin-left: 30px;
+                        }
+                        p{
+                            padding: 20px 20px;
+                            font-size: 17px;
+                            margin-left: 30px;
+                        }
+                        .websiteLink{
+                            font-size: 60px;
+                            color: $gray;
+                            margin-left: 30px;
+
+                        }
                     }
                     .right{
                         display: flex;
                         flex: 3;
                         height: 100%;
                         width: 100%;
-                        background-color: $mainColor1;
+                        background-color: $mainColor;
                     }
                 }
                 

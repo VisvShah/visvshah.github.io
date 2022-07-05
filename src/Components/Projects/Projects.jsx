@@ -1,9 +1,28 @@
-import React from 'react';
+import React, {useState}from 'react';
 import './projects.scss';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import LinkIcon from '@mui/icons-material/Link';
 export default function Projects() {
-      const projectData = [
+    const [currentProject, changeProject] = useState(0)
+    const moveLeft = ()=>{
+        if(currentProject>0) {
+            changeProject(currentProject-1);
+        }
+        else {
+            changeProject(2);
+        }
+        
+    }
+    const moveRight = ()=>{
+        if(currentProject<2) {
+            changeProject(currentProject+1);
+        }
+        else {
+            changeProject(0);
+        }
+    }
+    const projectData = [
         {
             id: "0",
             title: "Dragon Dragon Dash - A Mobile Game",
@@ -44,25 +63,31 @@ export default function Projects() {
     ];
   return (
     <div className = 'projects' id = 'projects'>
-        <div className="projectSlider">
-            {projectData.map((pD) => (
-            <div className="projectHolder">
-                <div className="project">
-                    <div className="top">
-                        <h1>{pD.title}</h1>
-                    </div>
-                    <div className="bottom">
-                        <div className="left">
+        <h1 className = "projectHeader">Projects</h1>
+        <div className="projectSlider" style = {{transform: `translateX(-${currentProject * 100}vw)`}}>
+                {projectData.map((pD) => (
+                <div className="projectHolder">
+                    <div className="project">
+                        <div className="top">
+                            <h1>{pD.title}</h1>
                         </div>
-                        <div className="right">
+                        <div className="bottom">
+                            <div className="left">
+                            <a href = {pD.link} target='_blank' rel="noreferrer noopener"><LinkIcon className= "websiteLink"/></a>
+                                <h2>{pD.date}</h2>
+                                <h2>Skills: {pD.skills}</h2>
+                                <p>{pD.desc}</p>
+                                
+                            </div>
+                            <div className="right">
+                            </div>
                         </div>
                     </div>
                 </div>
+                ))}
             </div>
-            ))}
-        </div>
-        <ArrowCircleLeftIcon className='leftArrow'/>
-        <ArrowCircleRightIcon className = 'rightArrow'/>
+            <ArrowCircleLeftIcon onClick = {()=>moveLeft()} className='leftArrow'/>
+            <ArrowCircleRightIcon onClick = {()=>moveRight()} className = 'rightArrow'/>
     </div>
   )
 }
