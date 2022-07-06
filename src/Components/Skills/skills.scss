@@ -70,22 +70,19 @@
             font-weight: 700;
             transition: all 1s ease;
             cursor: pointer;
-            &.expert{
-                background-color: #ae0303;
-            }
-            &.professional{
+            &.e{
                 background-color: #ff0000;
             }
-            &.advanced{
+            &.d{
                 background-color: #FF652F;
             }
-            &.intermediate{
+            &.c{
                 background-color: #FFE400;
             }
-            &.starter{
+            &.b{
                 background-color: #14A76C;
             }
-            &.intro{
+            &.a{
                 background-color: green;
             }
             &:hover{

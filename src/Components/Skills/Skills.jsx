@@ -5,93 +5,92 @@ export default function Skills() {
   const languages = [
     {
       id: "0",
-      level: "Advanced",
+      level: "Proficient",
       skill: "Java",
     },
+    
     {
       id: "1",
-      level: "Advanced",
-      skill: "Swift",
-    },
-    {
-      id: "2",
-      level: "Advanced",
+      level: "Proficient",
       skill: "Python",
     },
     {
+      id: "2",
+      level: "Competenant",
+      skill: "Swift",
+    },
+    {
       id: "3",
-      level: "Intermediate",
+      level: "Competenant",
       skill: "JavaScript",
     },
     {
       id: "4",
-      level: "Intermediate",
+      level: "Competenant",
       skill: "HTML",
     },
     {
       id: "5",
-      level: "Intermediate",
+      level: "Competenant",
       skill: "CSS",
     },
   ];
   const libraries = [
     {
       id: "0",
-      level: "Intermediate",
+      level: "Competenant",
       skill: "Spritekit",
     },
     {
       id: "1",
-      level: "Intermediate",
+      level: "Competenant",
       skill: "React.js",
     },
     {
       id: "2",
-      level: "Starter",
+      level: "Beginner",
       skill: "MongoDB.js",
     },
     {
       id: "3",
-      level: "Starter",
+      level: "Beginner",
       skill: "Express.js",
     },
     {
       id: "4",
-      level: "Starter",
+      level: "Beginner",
       skill: "Node.js",
     },
   ];
   const environments = [
     {
       id: "0",
-      level: "Intermediate",
-      skill: "Git",
-    },
-    {
-      id: "1",
-      level: "Intermediate",
+      level: "Competenant",
       skill: "VS Code",
     },
     {
-      id: "2",
-      level: "Intermediate",
+      id: "1",
+      level: "Competenant",
       skill: "XCode 12",
     },
+    {
+      id: "2",
+      level: "Competenant",
+      skill: "Git",
+    },
+    
   ];
   const getColor= (level)=>{
     if(level === "Expert"){
-      return "#8B0000";
-    }
-    else if(level === "Pro"){
       return "#ff0000";
     }
     else if(level === "Advanced"){
       return "#FF652F";
     }
-    else if(level === "Intermediate"){
+    else if(level === "Proficient"){
       return "#FFE400";
     }
-    else if(level === "Starter"){
+    else if(level === "Competenant"){
       return "#14A76C";
     }
     else{
@@ -135,27 +134,23 @@ export default function Skills() {
           ))}
       </div>
       <div className="legend">
-            <div className="level intro">
-              <p>Introductory</p>
+            <div className="level a">
+              <p>Beginner</p>
             </div>
             <ArrowForwardIcon className ="arrow"/>
-            <div className="level starter">
-              <p>Starter</p>
+            <div className="level b">
+              <p>Competenant</p>
             </div>
             <ArrowForwardIcon className ="arrow"/>
-            <div className="level intermediate">
-              <p>Intermediate</p>
+            <div className="level c">
+              <p>Proficient</p>
             </div>
             <ArrowForwardIcon className ="arrow"/>
-            <div className="level advanced">
+            <div className="level d">
               <p>Advanced</p>
             </div>
             <ArrowForwardIcon className ="arrow"/>
-            <div className="level professional">
-              <p>Professional</p>
-            </div>
-            <ArrowForwardIcon className ="arrow"/>
-            <div className="level expert">
+            <div className="level e">
               <p>Expert</p>
             </div>
       </div>
