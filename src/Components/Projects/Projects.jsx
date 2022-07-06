@@ -4,8 +4,9 @@ import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import PreviewIcon from '@mui/icons-material/Preview';
 import GitHubIcon from '@mui/icons-material/GitHub';
+
 export default function Projects() {
-    const [currentProject, changeProject] = useState(0)
+    const [currentProject, changeProject] = useState(0);
     const moveLeft = ()=>{
         if(currentProject>0) {
             changeProject(currentProject-1);
@@ -28,7 +29,7 @@ export default function Projects() {
             id: "0",
             title: "Dragon Dragon Dash",
             link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
-            videoLink: "https://www.youtube.com/embed/Kq7K9lWkZtI",
+            videoLink: "https://www.youtube-nocookie.com/embed/Kq7K9lWkZtI",
             gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
             skills: "Swift, Spritekit",
             date: "April 2022 - May 2022",
@@ -39,7 +40,7 @@ export default function Projects() {
             id: "1",
             title: "Personal Portfolio",
             link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
-            videoLink: "https://youtu.be/Kq7K9lWkZtI",
+            videoLink: "",
             gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
             skills: "React.js",
             date: "June 2022",
@@ -49,7 +50,7 @@ export default function Projects() {
             id: "2",
             title: "RankR",
             link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
-            videoLink: "https://youtu.be/Kq7K9lWkZtI",
+            videoLink: "",
             gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
             skills: "MERN.js stack",
             date: "July 2022 - August 2022",
@@ -61,7 +62,7 @@ export default function Projects() {
         <h1 className = "projectHeader">Projects</h1>
         <div className="projectSlider" style = {{transform: `translateX(-${currentProject * 100}vw)`}}>
                 {projectData.map((pD) => (
-                <div className="projectHolder">
+                <div className="projectHolder" key = {pD.id}>
                     <div className="project">
                         <div className="top">
                             <h1>{pD.title}</h1>
@@ -75,7 +76,7 @@ export default function Projects() {
                                 </div>
                             </div>
                             <div className="right">
-                                <iframe width="350" height="200" src={pD.videoLink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="350" height="200" src={pD.videoLink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                         </div>
                         <div className="bottom">

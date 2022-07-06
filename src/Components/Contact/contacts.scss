@@ -1,8 +1,9 @@
+@import "../../global.scss";
 .contacts{
-    .test{
-        font-size: 100px;
-        cursor: pointer;
+    background-color: $mainColor;
+    .left{
+        align-items: center;
+        justify-content: center;
+        
     }
-    background-color: #190061;
-    
 }
