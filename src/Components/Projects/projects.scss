@@ -15,21 +15,21 @@ $projectColor: $orange;
         top: 45%;
     }
     .leftArrow{
-        font-size: 100px;
+        font-size: 80px;
         color: $projectColor;
         position: absolute;
         left: 30px;
         cursor: pointer;
     }
     .rightArrow{
-        font-size: 100px;
+        font-size: 80px;
         color: $projectColor;
         position: absolute;
         right: 30px;
         cursor: pointer;
     }
     .projectSlider{
-        height: 675px;
+        height: 600px;
         display: flex;
         position: absolute;
         left: 0vw;
@@ -41,7 +41,7 @@ $projectColor: $orange;
             align-items: center;
             justify-content: center;
             .project{
-                width: 675px;
+                width: 600px;
                 height: 100%;
                 overflow: hidden;
                 display: flex;
@@ -59,7 +59,7 @@ $projectColor: $orange;
                     color: $fontColor;
                     font-weight: 700;
                     flex-direction: column;
-                    flex:1;
+                    flex:2;
                     h1{
                         margin-top: 70px;
                         font-weight: 700;
@@ -74,7 +74,7 @@ $projectColor: $orange;
                 }
                 .middle{
                     width: 100%;
-                    flex:2;
+                    flex:3;
                     display: flex;
                     flex-direction:row;
                     
@@ -82,11 +82,10 @@ $projectColor: $orange;
                         display: flex;
                         flex:4;
                         height:100%;
+                        align-items: center;
+                        justify-content: center;
                         width: 60%;
                         .textHolder{
-                            margin: 10px 10px;
-                            padding: 5px 5px;
-                            border-radius: 45%;
                             color: $fontColor;
                             display: flex;
                             align-items: center;
@@ -121,7 +120,7 @@ $projectColor: $orange;
                     align-items: center;
                     flex-direction: row;
                     display: flex;
-                    flex:1;
+                    flex:2;
                     color: $fontColor;
                     .link1{
                         font-size: 16px;

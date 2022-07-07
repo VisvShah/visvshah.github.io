@@ -2,29 +2,46 @@
 .about{
     background-color: #272727;
     display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
     .left{
-        flex: 0.5;
-        width: 50%;
+        flex: 1;
+        width: 100%;
         height: 100%;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .imageHolder{
-            margin-top: calc((100% - (100vh - 180px))/3);
-            margin-bottom: calc((100% - (100vh - 180px))/3);
-            margin-left: 100px;
-            height: calc(100vh - 180px);
-            width: calc(100vh - 180px);
+            height: 600px;
+            width: 600px;
             overflow: hidden;
             background-color: $orange;
             border-radius: 50%;
-            display: flex;
             align-items: center;
+            justify-content: center;
             float: left;
+            display: flex;
             transition: all 1s ease;
-            
+            @include mobile{
+                align-items: start;
+                height: 300px;
+                width: 300px;
+
+            }
             .imageOfMe{
                 margin: auto;
                 margin-bottom: -10px;
                 height: 100%;
+
+                @include mobile{
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100%;
+                }
             }
             &:hover{
                 width: 100%;
@@ -36,7 +53,7 @@
         
     }
     .right{
-        flex: 0.5;
+        flex: 1;
         color: $mainColor;
         overflow: hidden;
         .wrapper{

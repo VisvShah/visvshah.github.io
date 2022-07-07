@@ -76,7 +76,7 @@ export default function Projects() {
                                 </div>
                             </div>
                             <div className="right">
-                            <iframe width="350" height="200" src={pD.videoLink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="280" height="160" src={pD.videoLink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                         </div>
                         <div className="bottom">

@@ -6,3 +6,10 @@ $gray: #747474;
 $yellow: #FFE400;
 $orange: #FF652F;
 $green: #14A76C;
+
+$maxWidth: 822px;
+@mixin mobile{
+    @media (max-width: #{$maxWidth}){
+        @content
+    }
+}
