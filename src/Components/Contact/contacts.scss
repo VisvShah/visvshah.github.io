@@ -1,9 +1,73 @@
 @import "../../global.scss";
 .contacts{
     background-color: $mainColor;
+    display: flex;
+    color: white;
     .left{
+        display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        flex:1;
+        .emailHolder{
+            display: flex;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: black;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h1{
+                font-size: 50px;
+            }
+            h2{
+                font-size: 40px;
+                color: $orange;
+            }
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex:2;
         
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 80%;
+            input{
+                padding: 10px 10px;
+                border-radius: 10px;
+                width: 800px;
+                height: 40px;
+                font-size: 30px;
+            }
+            textarea{
+                padding: 10px 10px;
+                margin-top: 20px;;
+                border-radius: 10px;
+                width: 800px;
+                height: 400px;
+                font-size: 30px;
+            }
+            button{
+                cursor: pointer;
+                margin-top: 20px;
+                color: $orange;
+                background-color: black;
+                width: 300px;
+                height: 50px;
+                border: none;
+                border-radius: 10px;
+                font-size: 20px;
+            }
+        }
     }
 }

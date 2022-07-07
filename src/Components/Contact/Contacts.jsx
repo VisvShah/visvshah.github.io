@@ -1,34 +1,26 @@
 import React from 'react';
 import './contacts.scss';
 export default function Contacts() {
-  const environments = [
-    {
-      id: "0",
-      level: "Intermediate",
-      skill: "Git",
-    },
-    {
-      id: "1",
-      level: "Intermediate",
-      skill: "VS Code",
-    },
-    {
-      id: "2",
-      level: "Intermediate",
-      skill: "XCode 12",
-    },
-  ];
+  const sendEmail = (e) =>{
+    e.preventDefault();
+  }
   return (
     <div className = 'contacts' id = 'contacts'>
         <div className="left">
-          {environments.map((e) => (
-              <div className="skill" key = {e.id}>
-                  hello
-              </div>
-            ))}
+          
+          <div className="emailHolder">
+            <h1>Get in Touch:</h1>
+            <h2>visvshah0@gmail.com</h2>
+          </div>
+          
         </div>
         <div className="right">
-
+            <h2>or.. Send a Message!</h2>
+            <form onSubmit={sendEmail}>
+                <input placeholder = "Email" type ="text"/>
+                <textarea placeholder='Message' type = "text"/>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
   )
