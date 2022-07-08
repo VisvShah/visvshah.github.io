@@ -22,7 +22,11 @@
                 font-weight:700;
                 text-decoration: none;
                 color: inherit;
+                @include mobile{
+                    font-size: 35px;
+                }
             }
+            
             .link1{
                 font-size: 16px;
                 font-weight: 500;
@@ -32,6 +36,9 @@
                     color: $secondColor2;
                     margin-bottom: 2px;
                     transition: all 1s ease;
+                }
+                @include mobile{
+                    display: none;
                 }
             }
             .link2{
@@ -43,6 +50,10 @@
                     color: $secondColor2;
                     margin-bottom: 2px;
                     transition: all 1s ease;
+                    
+                }
+                @include mobile{
+                    display: none;
                 }
             }
             .links{

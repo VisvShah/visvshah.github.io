@@ -64,6 +64,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        @include mobile{
+            display: none;
+        }
         .level{
             display: flex;
             align-items: center;

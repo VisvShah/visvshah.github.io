@@ -33,7 +33,7 @@ export default function Projects() {
             gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
             skills: "Swift, Spritekit",
             date: "April 2022 - May 2022",
-            desc: "An original game idea I developed and published on the app store. Dragon Dragon Dash is a fun, infinite runner with varying difficulty, impactful upgrades, distinct powerups, and smooth gameplay.",
+            desc: "An original game idea I developed and published on the app store.",
         },
         
         {
