@@ -99,39 +99,41 @@ export default function Skills() {
   }
   return (
     <div className = 'skills' id = 'skills'>
-      <h1 className ="Header">Skills</h1>
-      <div className="skillHolder">
-        <h2 className = "sectionHeader">Languages: </h2>
-          {languages.map((s) => (
-            <div className="skill" key = {s.id}>
-                <div className="information">
-                  <h3 className = "skillName">{s.skill}</h3>
-                  <p className = "skillLevel">Level: <span style={{color: `${getColor(s.level)}`}}>{s.level}</span></p>
-                </div>
-            </div>
-          ))}
-      </div>
-      <div className="skillHolder">
-        <h2 className = "sectionHeader">Libraries: </h2>
-          {libraries.map((l) => (
-            <div className="skill" key = {l.id}>
-                <div className="information">
-                  <h3 className = "skillName">{l.skill}</h3>
-                  <p className = "skillLevel">Level: <span style={{color: `${getColor(l.level)}`}}>{l.level}</span></p>
-                </div>
-            </div>
-          ))}
-      </div>
-      <div className="skillHolder">
-        <h2 className = "sectionHeader">Environments: </h2>
-          {environments.map((e) => (
-            <div className="skill" key = {e.id}>
-                <div className="information">
-                  <h3 className = "skillName">{e.skill}</h3>
-                  <p className = "skillLevel">Level: <span style={{color: `${getColor(e.level)}`}}>{e.level}</span></p>
-                </div>
-            </div>
-          ))}
+      <h1 className ="header">Skills</h1>
+      <div className = 'allSkills'>
+        <div className="skillHolder">
+          <h2 className = "sectionHeader">Languages: </h2>
+            {languages.map((s) => (
+              <div className="skill" key = {s.id}>
+                  <div className="information">
+                    <h3 className = "skillName">{s.skill}</h3>
+                    <p className = "skillLevel">Level: <span style={{color: `${getColor(s.level)}`}}>{s.level}</span></p>
+                  </div>
+              </div>
+            ))}
+        </div>
+        <div className="skillHolder">
+          <h2 className = "sectionHeader">Libraries: </h2>
+            {libraries.map((l) => (
+              <div className="skill" key = {l.id}>
+                  <div className="information">
+                    <h3 className = "skillName">{l.skill}</h3>
+                    <p className = "skillLevel">Level: <span style={{color: `${getColor(l.level)}`}}>{l.level}</span></p>
+                  </div>
+              </div>
+            ))}
+        </div>
+        <div className="skillHolder">
+          <h2 className = "sectionHeader">Environments: </h2>
+            {environments.map((e) => (
+              <div className="skill" key = {e.id}>
+                  <div className="information">
+                    <h3 className = "skillName">{e.skill}</h3>
+                    <p className = "skillLevel">Level: <span style={{color: `${getColor(e.level)}`}}>{e.level}</span></p>
+                  </div>
+              </div>
+            ))}
+        </div>
       </div>
       <div className="legend">
             <div className="level a">

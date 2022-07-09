@@ -4,59 +4,96 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .Header{
+    overflow: hidden;
+    @include mobile{
+        flex-direction: column;
+    }
+    .header{
         color: white;
         font-weight: 700;
         font-size: 70px;
         margin-top: 20px;
         overflow: hidden;
-    }
-    .skillHolder{
-        width:100%;
-        align-items: center;
-        display: flex;
-        margin-top: 50px;
-        overflow: hidden;
-        .sectionHeader{
-            color:white;
-            font-size: 30px;
-            font-weight: 500;
-            margin-left: 20px;
-            h2{
-                margin-right: 10px;;
-            }
-        }
-        .skill{
-            overflow: hidden;
-            cursor: pointer;
-            width: 200px;
-            height: 100px;
-            border-radius: 10px;
-            background-color: black;
-            color: $gray;
-            font-size: 20px;
-            transition: all 0.5s ease;
-            align-items: center;
-            justify-content: center;
+        
+        @include mobile{
             display: flex;
-            margin-left: 10px;
-            .information{
-                text-align: center;
-                .skillName{
-                    font-size: 30px;
+            margin-top: 5px;
+            font-size: 30px;
+        }
+    }
+    .allSkills{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        @include mobile{
+            margin-top: 20px;
+            flex-direction: row;
+        }
+        .skillHolder{
+            width:100%;
+            align-items: center;
+            display: flex;
+            margin-top: 50px;
+            overflow:hidden;
+            @include mobile{
+                flex-direction: column;
+                margin-right: 0px;
+                margin-top: 0px;
+            }
+            .sectionHeader{
+                color:white;
+                font-size: 30px;
+                font-weight: 500;
+                margin-left: 20px;
+                @include mobile{
+                    display: none;
                 }
-                .skillLevel{
-                    font-size:20px;
+                h2{
+                    margin-right: 10px;
+                }
+            }
+            .skill{
+                overflow: hidden;
+                cursor: pointer;
+                width: 200px;
+                height: 100px;
+                border-radius: 10px;
+                background-color: black;
+                color: $gray;
+                font-size: 20px;
+                transition: all 0.5s ease;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                margin-left: 10px;
+                @include mobile{
+                    margin-left: 0px;
+                    margin-bottom: 10px;
+                    width: 32vw;
+                    height: 90px;
+                }
+                .information{
+                    text-align: center;
+                    .skillName{
+                        font-size: 30px;
+                        @include mobile{
+                            font-size: 18px;
+                        }
+                    }
+                    .skillLevel{
+                        font-size: 16px;
+                    }
+                }
+                
+                &:hover{
+                    background-color: $gray;
+                    color: white;
                 }
             }
             
-            &:hover{
-                background-color: $gray;
-                color: white;
-            }
         }
-        
     }
+    
     .legend{
         overflow: hidden;
         margin-top: 20px;
