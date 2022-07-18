@@ -10,7 +10,6 @@ $projectColor: black;
     overflow: hidden;
 
     @include mobile{
-        flex-direction: column;
         padding: 30px 0px;
     }
     .projectHeader{
@@ -26,7 +25,6 @@ $projectColor: black;
             font-size: 50px;
             position: relative;
             top: -330px;
-
         }
     }
     .leftArrow{
@@ -36,7 +34,7 @@ $projectColor: black;
         left: 30px;
         cursor: pointer;
         @include mobile{
-            display: none;
+            bottom: 100px;
         }
     }
     .rightArrow{
@@ -46,7 +44,7 @@ $projectColor: black;
         right: 30px;
         cursor: pointer;
         @include mobile{
-            display: none;
+            bottom: 100px;
         }
     }
     .projectSlider{
@@ -57,12 +55,7 @@ $projectColor: black;
         transition: all 1.5s ease;
         overflow: hidden;
         @include mobile{
-            height: 100vh;
-            width: 100vw;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 30px;
+            margin-top: 20%;
         }
         .projectHolder{
             width:100vw;
@@ -72,7 +65,8 @@ $projectColor: black;
             justify-content: center;
             overflow: hidden;
             @include mobile{
-                height:  25vh;
+                height:  95vw;
+                margin-top: 30px;
                 margin-bottom: 10px;
             }
             .project{
@@ -86,8 +80,7 @@ $projectColor: black;
                 background-color: $projectColor;
                 flex-direction: column;
                 @include mobile{
-                    width:330px;
-                    border-radius: 25px;
+                    width:  95vw;
                 }
                 .top{
                     display: flex;
@@ -104,7 +97,7 @@ $projectColor: black;
                         font-weight: 700;
                         font-size: 35px;
                         @include mobile{
-                            margin-top: 10px;
+                            margin-top: 40px;
                             font-size: 20px;
                             font-weight: 700;
                         }
@@ -116,11 +109,8 @@ $projectColor: black;
                         font-size: 20px;
                         color: $orange;
                         @include mobile{
-                            display: none;
+                            font-size: 16px;
                         }
-                    }
-                    @include mobile{
-                        
                     }
                 }
                 .middle{
@@ -129,9 +119,6 @@ $projectColor: black;
                     display: flex;
                     flex-direction:row;
                     overflow: hidden;
-                    @include mobile{
-                        flex: 5;
-                    }
                     .left{
                         display: flex;
                         flex:4;
@@ -140,6 +127,9 @@ $projectColor: black;
                         justify-content: center;
                         width: 60%;
                         overflow: hidden;
+                        @include mobile{
+                            flex: 5;
+                        }
                         .textHolder{
                             color: $fontColor;
                             display: flex;
@@ -164,7 +154,6 @@ $projectColor: black;
                                 margin-left: 30px;
                                 color: $gray;
                                 @include mobile{
-                                    padding: 3px 3px;
                                     font-size: 15px;
                                     margin: 0px;
                                 }
@@ -178,11 +167,12 @@ $projectColor: black;
                         width: 40%;
                         align-items: center;
                         overflow: hidden;
-                        iframe{
-                            border-radius: 20px;
-                        }
                         @include mobile{
-                            display: none;
+                            flex: 4;
+                            padding: 10px 10px;
+                        }
+                        video{
+                            border-radius: 20px;
                         }
                     }
                 }

@@ -76,7 +76,7 @@ export default function Projects() {
                                 </div>
                             </div>
                             <div className="right">
-                                <video src = {pD.videoLink} type="video/mp4" width="280" height="160" controls>
+                                <video src = {pD.videoLink} type="video/mp4" width="280" height="160" controls controlsList="nomute noremoteplayback nodownload noplaybackrate foobar">
                                 </video>
                             </div>
                         </div>
