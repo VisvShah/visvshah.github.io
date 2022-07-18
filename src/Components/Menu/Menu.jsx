@@ -2,7 +2,7 @@ import React from 'react'
 import './menu.scss'
 export default function Menu({isMenuOpened, setMenuOpened}) {
   return (
-    <div className = {'menu ' + (isMenuOpened && 'active')}>
+    <div className = {'menu ' + (isMenuOpened && 'active')} onClick={()=>setMenuOpened(!isMenuOpened)}>
         <ul>
             <li onClick={()=>setMenuOpened(!isMenuOpened)}>
                 <a href = '#about'>Home</a>

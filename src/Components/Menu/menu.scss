@@ -29,11 +29,11 @@
                 font-size: 40px;
                 color:$mainColor;
                 text-decoration: none;
-                
+                &:hover{
+                    font-weight: 700;
+                }
             }
-            &:hover{
-                font-weight: 700;
-            }
+            
         }
     }
 }

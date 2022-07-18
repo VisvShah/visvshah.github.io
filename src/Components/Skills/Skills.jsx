@@ -16,34 +16,34 @@ export default function Skills() {
     },
     {
       id: "2",
-      level: "Competenant",
+      level: "Competant",
       skill: "Swift",
     },
     {
       id: "3",
-      level: "Competenant",
+      level: "Competant",
       skill: "JavaScript",
     },
     {
       id: "4",
-      level: "Competenant",
+      level: "Competant",
       skill: "HTML",
     },
     {
       id: "5",
-      level: "Competenant",
+      level: "Competant",
       skill: "CSS",
     },
   ];
   const libraries = [
     {
       id: "0",
-      level: "Competenant",
+      level: "Competant",
       skill: "Spritekit",
     },
     {
       id: "1",
-      level: "Competenant",
+      level: "Competant",
       skill: "React.js",
     },
     {
@@ -65,17 +65,17 @@ export default function Skills() {
   const environments = [
     {
       id: "0",
-      level: "Competenant",
+      level: "Competant",
       skill: "VS Code",
     },
     {
       id: "1",
-      level: "Competenant",
+      level: "Competant",
       skill: "XCode 12",
     },
     {
       id: "2",
-      level: "Competenant",
+      level: "Competant",
       skill: "Git",
     },
     
@@ -90,7 +90,7 @@ export default function Skills() {
     else if(level === "Proficient"){
       return "#FFE400";
     }
-    else if(level === "Competenant"){
+    else if(level === "Competant"){
       return "#14A76C";
     }
     else{

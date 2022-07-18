@@ -4,7 +4,7 @@ import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import PreviewIcon from '@mui/icons-material/Preview';
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import Trailer1 from '../../assets/DDDTrailer.mp4';
 export default function Projects() {
     const [currentProject, changeProject] = useState(0);
     const moveLeft = ()=>{
@@ -29,7 +29,7 @@ export default function Projects() {
             id: "0",
             title: "Dragon Dragon Dash",
             link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
-            videoLink: "https://www.youtube-nocookie.com/embed/Kq7K9lWkZtI",
+            videoLink: Trailer1,
             gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
             skills: "Swift, Spritekit",
             date: "April 2022 - May 2022",
@@ -39,8 +39,8 @@ export default function Projects() {
         {
             id: "1",
             title: "Personal Portfolio",
-            link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
-            videoLink: "",
+            link: "#about",
+            videoLink: Trailer1,
             gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
             skills: "React.js",
             date: "June 2022",
@@ -50,7 +50,7 @@ export default function Projects() {
             id: "2",
             title: "RankR",
             link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
-            videoLink: "",
+            videoLink: Trailer1,
             gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
             skills: "MERN.js stack",
             date: "July 2022 - August 2022",
@@ -76,7 +76,8 @@ export default function Projects() {
                                 </div>
                             </div>
                             <div className="right">
-                            <iframe width="280" height="160" src={pD.videoLink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                <video src = {pD.videoLink} type="video/mp4" width="280" height="160" controls>
+                                </video>
                             </div>
                         </div>
                         <div className="bottom">
