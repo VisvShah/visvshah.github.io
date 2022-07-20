@@ -39,7 +39,7 @@ export default function Contacts() {
                 <ValidationError prefix="Message" field="message" errors={submitState.errors}/>
                 <button onClick = {checkIfSubmitted} type="submit" disabled={submitState.submitting}>Submit</button>
             </form>
-            <p className={'messageResponse ' + (!didSubmit && 'active')}>Thanks! I'll reply asap :)</p>
+            <p className={'messageResponse ' + (didSubmit && 'active')}>Thanks! I'll reply asap :)</p>
         </div>
     </div>
   )
