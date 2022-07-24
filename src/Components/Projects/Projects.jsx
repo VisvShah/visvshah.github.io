@@ -44,7 +44,7 @@ export default function Projects() {
             gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
             skills: "React.js",
             date: "June 2022",
-            desc: "This personal portfolio furthered my expereince with several asppects of React.js.",
+            desc: "This website :)",
         },
         {
             id: "2",

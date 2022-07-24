@@ -6,10 +6,9 @@
     align-items: center;
     overflow: hidden;
     @include mobile{
-        flex-direction: column;
     }
     .header{
-        color: white;
+        color: $gray;
         font-weight: 700;
         font-size: 70px;
         margin-top: 20px;
@@ -33,15 +32,23 @@
             width:100%;
             align-items: center;
             display: flex;
-            margin-top: 50px;
+            margin-top: 10px;
             overflow:hidden;
+            position: relative;
+            left: 100px;
+            &.env{
+                @include mobile{
+                    display: none;
+                }
+            }
             @include mobile{
+                position: static;
                 flex-direction: column;
                 margin-right: 0px;
                 margin-top: 0px;
             }
             .sectionHeader{
-                color:white;
+                color:$gray;
                 font-size: 30px;
                 font-weight: 500;
                 margin-left: 20px;
@@ -55,9 +62,9 @@
             .skill{
                 overflow: hidden;
                 cursor: pointer;
-                width: 200px;
-                height: 100px;
-                border-radius: 10px;
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
                 background-color: black;
                 color: $gray;
                 font-size: 20px;
@@ -65,12 +72,12 @@
                 align-items: center;
                 justify-content: center;
                 display: flex;
-                margin-left: 10px;
+                margin-left: 30px;
                 @include mobile{
                     margin-left: 0px;
-                    margin-bottom: 10px;
-                    width: 32vw;
-                    height: 90px;
+                    margin-bottom: 5px;
+                    width: 40vw;
+                    height: 35vw;
                 }
                 .information{
                     text-align: center;
@@ -91,53 +98,6 @@
                 }
             }
             
-        }
-    }
-    
-    .legend{
-        overflow: hidden;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        @include mobile{
-            display: none;
-        }
-        .level{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100px;
-            height: 100px;
-            background-color: white;
-            border-radius: 50%;
-            color: black;
-            font-weight: 700;
-            transition: all 1s ease;
-            cursor: pointer;
-            &.e{
-                background-color: #ff0000;
-            }
-            &.d{
-                background-color: #FF652F;
-            }
-            &.c{
-                background-color: #FFE400;
-            }
-            &.b{
-                background-color: #14A76C;
-            }
-            &.a{
-                background-color: green;
-            }
-            &:hover{
-                border-radius: 0;
-            }
-        }
-        .arrow{
-            font-size: 50px;
-            color:white;
         }
     }
 }

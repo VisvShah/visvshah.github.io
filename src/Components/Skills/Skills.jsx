@@ -1,6 +1,5 @@
 import React from 'react'
 import './skills.scss'
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 export default function Skills() {
   const languages = [
     {
@@ -16,34 +15,29 @@ export default function Skills() {
     },
     {
       id: "2",
-      level: "Competant",
+      level: "Competent",
       skill: "Swift",
     },
     {
       id: "3",
-      level: "Competant",
+      level: "Competent",
       skill: "JavaScript",
     },
     {
       id: "4",
-      level: "Competant",
-      skill: "HTML",
-    },
-    {
-      id: "5",
-      level: "Competant",
-      skill: "CSS",
+      level: "Competent",
+      skill: "HTML + CSS",
     },
   ];
   const libraries = [
     {
       id: "0",
-      level: "Competant",
+      level: "Competent",
       skill: "Spritekit",
     },
     {
       id: "1",
-      level: "Competant",
+      level: "Competent",
       skill: "React.js",
     },
     {
@@ -65,17 +59,17 @@ export default function Skills() {
   const environments = [
     {
       id: "0",
-      level: "Competant",
+      level: "Competent",
       skill: "VS Code",
     },
     {
       id: "1",
-      level: "Competant",
+      level: "Competent",
       skill: "XCode 12",
     },
     {
       id: "2",
-      level: "Competant",
+      level: "Competent",
       skill: "Git",
     },
     
@@ -90,7 +84,7 @@ export default function Skills() {
     else if(level === "Proficient"){
       return "#FFE400";
     }
-    else if(level === "Competant"){
+    else if(level === "Competent"){
       return "#14A76C";
     }
     else{
@@ -123,7 +117,7 @@ export default function Skills() {
               </div>
             ))}
         </div>
-        <div className="skillHolder">
+        <div className="skillHolder env">
           <h2 className = "sectionHeader">Environments: </h2>
             {environments.map((e) => (
               <div className="skill" key = {e.id}>
@@ -134,27 +128,6 @@ export default function Skills() {
               </div>
             ))}
         </div>
-      </div>
-      <div className="legend">
-            <div className="level a">
-              <p>Beginner</p>
-            </div>
-            <ArrowForwardIcon className ="arrow"/>
-            <div className="level b">
-              <p>Competenant</p>
-            </div>
-            <ArrowForwardIcon className ="arrow"/>
-            <div className="level c">
-              <p>Proficient</p>
-            </div>
-            <ArrowForwardIcon className ="arrow"/>
-            <div className="level d">
-              <p>Advanced</p>
-            </div>
-            <ArrowForwardIcon className ="arrow"/>
-            <div className="level e">
-              <p>Expert</p>
-            </div>
       </div>
     </div>
   )

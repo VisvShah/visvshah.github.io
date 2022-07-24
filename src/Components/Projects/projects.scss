@@ -55,7 +55,7 @@ $projectColor: black;
         transition: all 1.5s ease;
         overflow: hidden;
         @include mobile{
-            margin-top: 20%;
+            margin-top: 20vw;
         }
         .projectHolder{
             width:100vw;
@@ -65,7 +65,7 @@ $projectColor: black;
             justify-content: center;
             overflow: hidden;
             @include mobile{
-                height:  95vw;
+                height:  342px;
                 margin-top: 30px;
                 margin-bottom: 10px;
             }
@@ -80,7 +80,7 @@ $projectColor: black;
                 background-color: $projectColor;
                 flex-direction: column;
                 @include mobile{
-                    width:  95vw;
+                    width:  342px;
                 }
                 .top{
                     display: flex;
@@ -92,6 +92,7 @@ $projectColor: black;
                     flex-direction: column;
                     overflow: hidden;
                     flex:2;
+
                     h1{
                         margin-top: 70px;
                         font-weight: 700;
