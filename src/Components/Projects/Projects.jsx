@@ -4,7 +4,9 @@ import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import PreviewIcon from '@mui/icons-material/Preview';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Trailer1 from '../../assets/DDDTrailer.mp4';
+import Trailer3 from '../../assets/DDDTrailer.mp4';
+import Trailer2 from '../../assets/visvTrailer.mp4';
+import Trailer1 from '../../assets/rankRtrailer.mp4';
 export default function Projects() {
     const [currentProject, changeProject] = useState(0);
     const moveLeft = ()=>{
@@ -27,20 +29,19 @@ export default function Projects() {
     const projectData = [
         {
             id: "0",
-            title: "Dragon Dragon Dash",
+            title: "RankR",
             link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
             videoLink: Trailer1,
             gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
-            skills: "Swift, Spritekit",
-            date: "April 2022 - May 2022",
-            desc: "An original game idea I developed and published on the app store.",
+            skills: "MERN.js stack",
+            date: "July 2022 - August 2022",
+            desc: "Fullstack JS project featuring an authentication process, all CRUD actions, and a search functionallity. View github for more information.",
         },
-        
         {
             id: "1",
             title: "Personal Portfolio",
             link: "#about",
-            videoLink: Trailer1,
+            videoLink: Trailer2,
             gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
             skills: "React.js",
             date: "June 2022",
@@ -48,13 +49,13 @@ export default function Projects() {
         },
         {
             id: "2",
-            title: "RankR",
+            title: "Dragon Dragon Dash",
             link: "https://apps.apple.com/tt/app/dragon-dragon-dash/id1621746085",
-            videoLink: Trailer1,
+            videoLink: Trailer3,
             gitLink: "https://github.com/VisvShah/Dragon-Dragon-Dash-Game",
-            skills: "MERN.js stack",
-            date: "July 2022 - August 2022",
-            desc: "in construction...",
+            skills: "Swift, Spritekit",
+            date: "April 2022 - May 2022",
+            desc: "An original game idea I developed and published on the app store.",
         },
     ];
   return (

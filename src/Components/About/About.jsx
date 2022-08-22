@@ -14,8 +14,8 @@ export default function About() {
             <div className="wrapper">
                 <h2>Hi, I'm</h2>
                 <h1>Visv Shah</h1>
-                <p>An innovater who loves to create</p>
-                
+                <p>-Software Engineering Enthusiast</p>
+                <p>-CS Student at Purdue</p>
             </div>
         </div>
         
