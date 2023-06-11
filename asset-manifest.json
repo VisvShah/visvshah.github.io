@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.0cec27e5.css",
-    "main.js": "/static/js/main.e22c34db.js",
+    "main.js": "/static/js/main.4346ef97.js",
     "static/media/DDDTrailer.mp4": "/static/media/DDDTrailer.c62f078e1d1a43779ff6.mp4",
     "static/media/visvTrailer.mp4": "/static/media/visvTrailer.9ba93370515734fe32fc.mp4",
     "static/media/rankRtrailer.mp4": "/static/media/rankRtrailer.05bba019931ab67b2e86.mp4",
     "static/media/ImageOfVisv.png": "/static/media/ImageOfVisv.00c228f50d90a65be1f0.png",
     "index.html": "/index.html",
     "main.0cec27e5.css.map": "/static/css/main.0cec27e5.css.map",
-    "main.e22c34db.js.map": "/static/js/main.e22c34db.js.map"
+    "main.4346ef97.js.map": "/static/js/main.4346ef97.js.map"
   },
   "entrypoints": [
     "static/css/main.0cec27e5.css",
-    "static/js/main.e22c34db.js"
+    "static/js/main.4346ef97.js"
   ]
 }
