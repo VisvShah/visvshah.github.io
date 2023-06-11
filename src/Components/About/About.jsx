@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './about.scss'
 import ImageOfVisv from '../../assets/ImageOfVisv.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function About() {
   return (
@@ -12,10 +14,8 @@ export default function About() {
         </div>
         <div className="right">
             <div className="wrapper">
-                <h2>Hi, I'm</h2>
+                <h2>Hey! I'm</h2>
                 <h1>Visv Shah</h1>
-                <p>-Software Engineering Enthusiast</p>
-                <p>-CS Student at Purdue</p>
             </div>
         </div>
         
