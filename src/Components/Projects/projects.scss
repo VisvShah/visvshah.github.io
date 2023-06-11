@@ -11,6 +11,7 @@ $projectColor: black;
 
     @include mobile{
         padding: 30px 0px;
+        align-items: baseline;
     }
     .projectHeader{
         color: $orange;
@@ -23,8 +24,8 @@ $projectColor: black;
         justify-content: center;
         @include mobile{
             font-size: 50px;
-            position: relative;
-            top: -330px;
+            position: static;
+            top: 30px;
         }
     }
     .leftArrow{
@@ -34,7 +35,7 @@ $projectColor: black;
         left: 30px;
         cursor: pointer;
         @include mobile{
-            bottom: 100px;
+            bottom: 10vh;
         }
     }
     .rightArrow{
@@ -44,7 +45,7 @@ $projectColor: black;
         right: 30px;
         cursor: pointer;
         @include mobile{
-            bottom: 100px;
+            bottom: 10vh;
         }
     }
     .projectSlider{
