@@ -10,9 +10,9 @@ export default function Menu({isMenuOpened, setMenuOpened}) {
             <li onClick={()=>setMenuOpened(!isMenuOpened)}>
                 <a href = '#projects'>Projects</a>
             </li>
-            <li onClick={()=>setMenuOpened(!isMenuOpened)}>
+            {/* <li onClick={()=>setMenuOpened(!isMenuOpened)}>
                 <a href = '#skills'>Skills</a>
-            </li>
+            </li> */}
             <li onClick={()=>setMenuOpened(!isMenuOpened)}>
                 <a href = '#contacts'>Contacts</a>
             </li>
